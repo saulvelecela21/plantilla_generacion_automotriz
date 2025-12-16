@@ -686,7 +686,7 @@
 							<textFieldExpression><![CDATA[$F{tituloOtros}]]></textFieldExpression>
 						</textField>
 						<textField textAdjust="ScaleFont">
-							<reportElement x="140" y="0" width="220" height="10" uuid="088e8ce4-ff8c-4b8a-a19f-063741eab385"/>
+							<reportElement x="140" y="0" width="170" height="10" uuid="088e8ce4-ff8c-4b8a-a19f-063741eab385"/>
 							<box>
 								<pen lineWidth="0.25"/>
 								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
@@ -699,6 +699,13 @@
 							</textElement>
 							<textFieldExpression><![CDATA[$F{valorOtros}]]></textFieldExpression>
 						</textField>
+						<staticText>
+							<reportElement x="310" y="0" width="50" height="10" uuid="dad8d4f3-8621-4290-b260-0d1e92a3d7a1"/>
+							<textElement>
+								<font size="7"/>
+							</textElement>
+							<text><![CDATA[Static Text]]></text>
+						</staticText>
 					</jr:listContents>
 				</jr:list>
 			</componentElement>
