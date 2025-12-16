@@ -668,7 +668,7 @@
 				</reportElement>
 				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
 					<datasetRun subDataset="listaOtros" uuid="a570cabd-6ed1-4f3e-80bd-e6fd5614a1d3">
-						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
 					</datasetRun>
 					<jr:listContents height="10" width="360">
 						<textField textAdjust="ScaleFont">
