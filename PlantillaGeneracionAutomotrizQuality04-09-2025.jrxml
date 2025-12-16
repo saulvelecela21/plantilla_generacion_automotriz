@@ -153,6 +153,7 @@
 	<field name="valorPlazo" class="java.lang.Integer"/>
 	<field name="tipoSeguro" class="java.lang.String"/>
 	<field name="plazoSeguro" class="java.math.BigDecimal"/>
+	<field name="listaOtros" class="java.util.Collection"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -661,7 +662,7 @@
 		</band>
 		<band height="24">
 			<componentElement>
-				<reportElement x="16" y="11" width="360" height="13" uuid="5f512421-5ebd-4fc3-8084-65130a70a3b7">
+				<reportElement x="16" y="14" width="360" height="10" uuid="5f512421-5ebd-4fc3-8084-65130a70a3b7">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -669,7 +670,7 @@
 					<datasetRun subDataset="listaOtros" uuid="9255e4bb-32af-486c-8f5e-f995c29dd7e4">
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
-					<jr:listContents height="13" width="360">
+					<jr:listContents height="10" width="360">
 						<textField textAdjust="ScaleFont">
 							<reportElement x="0" y="0" width="140" height="10" forecolor="#FF0905" uuid="9518f6ca-1edd-4731-94fb-77b0c28baae9"/>
 							<box>
@@ -702,7 +703,7 @@
 				</jr:list>
 			</componentElement>
 			<staticText>
-				<reportElement x="16" y="0" width="360" height="11" forecolor="#FF1205" uuid="af1b782e-ab2e-45a3-80b7-ab984760ac21">
+				<reportElement x="16" y="3" width="360" height="11" forecolor="#FF1205" uuid="af1b782e-ab2e-45a3-80b7-ab984760ac21">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
