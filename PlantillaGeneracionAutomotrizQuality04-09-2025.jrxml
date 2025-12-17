@@ -660,55 +660,7 @@
 				<textFieldExpression><![CDATA["$ " + String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="32">
-			<componentElement>
-				<reportElement x="16" y="14" width="360" height="18" uuid="5f512421-5ebd-4fc3-8084-65130a70a3b7">
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
-					<datasetRun subDataset="listaOtros" uuid="a570cabd-6ed1-4f3e-80bd-e6fd5614a1d3">
-						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
-					</datasetRun>
-					<jr:listContents height="18" width="360">
-						<textField textAdjust="ScaleFont">
-							<reportElement x="0" y="0" width="140" height="10" forecolor="#FF0905" uuid="9518f6ca-1edd-4731-94fb-77b0c28baae9"/>
-							<box>
-								<pen lineWidth="0.25" lineColor="#050100"/>
-								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#050100"/>
-								<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#050100"/>
-								<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#050100"/>
-								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#050100"/>
-							</box>
-							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="7" isBold="true"/>
-							</textElement>
-							<textFieldExpression><![CDATA[$F{tituloOtros}]]></textFieldExpression>
-						</textField>
-						<textField textAdjust="ScaleFont">
-							<reportElement x="140" y="0" width="170" height="10" uuid="088e8ce4-ff8c-4b8a-a19f-063741eab385"/>
-							<box>
-								<pen lineWidth="0.25"/>
-								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
-								<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
-								<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
-								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
-							</box>
-							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="7"/>
-							</textElement>
-							<textFieldExpression><![CDATA[$F{valorOtros}]]></textFieldExpression>
-						</textField>
-						<staticText>
-							<reportElement x="310" y="0" width="50" height="10" uuid="dad8d4f3-8621-4290-b260-0d1e92a3d7a1"/>
-							<textElement>
-								<font size="7"/>
-							</textElement>
-							<text><![CDATA[texto pruea]]></text>
-						</staticText>
-					</jr:listContents>
-				</jr:list>
-			</componentElement>
+		<band height="24">
 			<staticText>
 				<reportElement x="16" y="3" width="360" height="11" forecolor="#FF1205" uuid="af1b782e-ab2e-45a3-80b7-ab984760ac21">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -726,6 +678,49 @@
 				</textElement>
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
+			<componentElement>
+				<reportElement x="16" y="14" width="360" height="10" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.CONTENTS.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.CONTENTS.width" value="pixel"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Horizontal">
+					<datasetRun subDataset="listaOtros" uuid="70fd1c04-9935-474b-a940-494a029fbd6d">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="10" width="360">
+						<textField textAdjust="ScaleFont">
+							<reportElement x="140" y="0" width="220" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font size="7"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{valorOtros}]]></textFieldExpression>
+						</textField>
+						<textField textAdjust="ScaleFont">
+							<reportElement x="0" y="0" width="140" height="10" forecolor="#FF0905" uuid="030b5cbe-97ac-4eb3-bf37-eb7e1b3d2897"/>
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font size="7" isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{tituloOtros}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 		<band height="50">
 			<staticText>
