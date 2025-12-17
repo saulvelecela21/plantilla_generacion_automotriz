@@ -679,7 +679,7 @@
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
 		</band>
-		<band height="11" splitType="Stretch">
+		<band height="10" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<componentElement>
 				<reportElement x="16" y="0" width="360" height="10" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
