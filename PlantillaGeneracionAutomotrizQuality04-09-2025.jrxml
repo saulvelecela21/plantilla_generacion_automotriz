@@ -660,7 +660,7 @@
 				<textFieldExpression><![CDATA["$ " + String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="31" splitType="Stretch">
+		<band height="47" splitType="Stretch">
 			<staticText>
 				<reportElement x="16" y="3" width="360" height="11" forecolor="#FF1205" uuid="af1b782e-ab2e-45a3-80b7-ab984760ac21">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -679,7 +679,7 @@
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement x="16" y="14" width="360" height="17" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
+				<reportElement x="16" y="14" width="314" height="17" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.CONTENTS.height" value="px"/>
@@ -689,7 +689,7 @@
 					<datasetRun subDataset="listaOtros" uuid="70fd1c04-9935-474b-a940-494a029fbd6d">
 						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="17" width="360">
+					<jr:listContents height="17" width="314">
 						<textField textAdjust="ScaleFont">
 							<reportElement x="140" y="0" width="160" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
 							<box>
@@ -728,6 +728,15 @@
 					</jr:listContents>
 				</jr:list>
 			</componentElement>
+			<staticText>
+				<reportElement x="330" y="14" width="46" height="10" uuid="47759781-309d-44f6-91b2-441e69f02213">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[texto a lado]]></text>
+			</staticText>
 		</band>
 		<band height="50">
 			<staticText>
