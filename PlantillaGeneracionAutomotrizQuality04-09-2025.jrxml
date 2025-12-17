@@ -682,7 +682,7 @@
 		<band height="11" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<componentElement>
-				<reportElement x="16" y="0" width="360" height="11" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
+				<reportElement x="16" y="0" width="360" height="10" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.CONTENTS.height" value="px"/>
@@ -692,7 +692,7 @@
 					<datasetRun subDataset="listaOtros" uuid="70fd1c04-9935-474b-a940-494a029fbd6d">
 						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="11" width="360">
+					<jr:listContents height="10" width="360">
 						<textField textAdjust="ScaleFont">
 							<reportElement x="140" y="0" width="220" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
 							<box>
@@ -703,7 +703,7 @@
 								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 							</box>
 							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="6"/>
+								<font size="7"/>
 							</textElement>
 							<textFieldExpression><![CDATA[$F{valorOtros}]]></textFieldExpression>
 						</textField>
@@ -717,7 +717,7 @@
 								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 							</box>
 							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="6" isBold="true"/>
+								<font size="7" isBold="true"/>
 							</textElement>
 							<textFieldExpression><![CDATA[$F{tituloOtros}]]></textFieldExpression>
 						</textField>
