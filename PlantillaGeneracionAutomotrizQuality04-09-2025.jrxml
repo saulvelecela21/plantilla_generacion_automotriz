@@ -643,7 +643,7 @@
 				<text><![CDATA[TOTAL DEL DISPOSITIVO]]></text>
 			</staticText>
 			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
-				<reportElement x="156" y="0" width="220" height="11" uuid="33182083-8510-4343-9782-dd8547092668">
+				<reportElement x="156" y="0" width="220" height="11" forecolor="#050505" uuid="33182083-8510-4343-9782-dd8547092668">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -655,9 +655,9 @@
 					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="6"/>
+					<font fontName="SansSerif" size="7"/>
 				</textElement>
-				<textFieldExpression><![CDATA["$ " + String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
+				<textFieldExpression><![CDATA[String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="20">
@@ -694,7 +694,7 @@
 					</datasetRun>
 					<jr:listContents height="10" width="360">
 						<textField textAdjust="ScaleFont">
-							<reportElement x="140" y="0" width="220" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
+							<reportElement x="140" y="0" width="220" height="10" forecolor="#FF0E0A" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
 							<box>
 								<pen lineWidth="0.25"/>
 								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
@@ -778,7 +778,7 @@
 				<text><![CDATA[TOTAL OTROS]]></text>
 			</staticText>
 			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
-				<reportElement x="156" y="0" width="220" height="11" uuid="918fc385-1c36-47c0-9c90-618a8b3f6d32">
+				<reportElement x="156" y="0" width="220" height="11" forecolor="#050505" uuid="918fc385-1c36-47c0-9c90-618a8b3f6d32">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -790,9 +790,9 @@
 					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="6"/>
+					<font fontName="SansSerif" size="7"/>
 				</textElement>
-				<textFieldExpression><![CDATA["$ " + String.valueOf($F{otros}!=null?$F{otros}:new BigDecimal("0.00"))]]></textFieldExpression>
+				<textFieldExpression><![CDATA[String.valueOf($F{otros}!=null?$F{otros}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="16" y="22" width="140" height="11" forecolor="#FF1205" uuid="4013068b-39ef-4dd2-8413-c521319ddc27">
