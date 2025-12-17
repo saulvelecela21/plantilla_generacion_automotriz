@@ -660,9 +660,9 @@
 				<textFieldExpression><![CDATA["$ " + String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="24">
+		<band height="32">
 			<componentElement>
-				<reportElement x="16" y="14" width="360" height="10" uuid="5f512421-5ebd-4fc3-8084-65130a70a3b7">
+				<reportElement x="16" y="14" width="360" height="18" uuid="5f512421-5ebd-4fc3-8084-65130a70a3b7">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -670,7 +670,7 @@
 					<datasetRun subDataset="listaOtros" uuid="a570cabd-6ed1-4f3e-80bd-e6fd5614a1d3">
 						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="10" width="360">
+					<jr:listContents height="18" width="360">
 						<textField textAdjust="ScaleFont">
 							<reportElement x="0" y="0" width="140" height="10" forecolor="#FF0905" uuid="9518f6ca-1edd-4731-94fb-77b0c28baae9"/>
 							<box>
