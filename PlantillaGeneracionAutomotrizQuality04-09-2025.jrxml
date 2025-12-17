@@ -655,7 +655,7 @@
 					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="7"/>
+					<font fontName="SansSerif" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
@@ -790,7 +790,7 @@
 					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="7"/>
+					<font fontName="SansSerif" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[String.valueOf($F{otros}!=null?$F{otros}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
