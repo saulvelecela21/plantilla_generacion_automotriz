@@ -691,7 +691,7 @@
 					</datasetRun>
 					<jr:listContents height="18" width="360">
 						<textField textAdjust="ScaleFont">
-							<reportElement x="140" y="0" width="220" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
+							<reportElement x="140" y="0" width="160" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
 							<box>
 								<pen lineWidth="0.25"/>
 								<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
@@ -700,7 +700,7 @@
 								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 							</box>
 							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="7"/>
+								<font size="6"/>
 							</textElement>
 							<textFieldExpression><![CDATA[$F{valorOtros}]]></textFieldExpression>
 						</textField>
@@ -714,10 +714,17 @@
 								<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
 							</box>
 							<textElement textAlignment="Center" verticalAlignment="Middle">
-								<font size="7" isBold="true"/>
+								<font size="6" isBold="true"/>
 							</textElement>
 							<textFieldExpression><![CDATA[$F{tituloOtros}]]></textFieldExpression>
 						</textField>
+						<staticText>
+							<reportElement x="300" y="0" width="50" height="10" uuid="d89e295f-686f-4595-9f60-610ba20291e5"/>
+							<textElement>
+								<font size="5"/>
+							</textElement>
+							<text><![CDATA[texto prueba]]></text>
+						</staticText>
 					</jr:listContents>
 				</jr:list>
 			</componentElement>
