@@ -660,7 +660,7 @@
 				<textFieldExpression><![CDATA["$ " + String.valueOf($F{totalDispositivo}!=null?$F{totalDispositivo}:new BigDecimal("0.00"))]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="24">
+		<band height="24" splitType="Stretch">
 			<staticText>
 				<reportElement x="16" y="3" width="360" height="11" forecolor="#FF1205" uuid="af1b782e-ab2e-45a3-80b7-ab984760ac21">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
