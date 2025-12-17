@@ -679,10 +679,10 @@
 				<text><![CDATA[OTROS]]></text>
 			</staticText>
 		</band>
-		<band height="34" splitType="Stretch">
+		<band height="11" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<componentElement>
-				<reportElement x="16" y="0" width="344" height="11" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
+				<reportElement x="16" y="0" width="360" height="11" uuid="cdf482aa-a408-474e-849d-2ef9d9a0334a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.CONTENTS.height" value="px"/>
@@ -692,7 +692,7 @@
 					<datasetRun subDataset="listaOtros" uuid="70fd1c04-9935-474b-a940-494a029fbd6d">
 						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaOtros})]]></dataSourceExpression>
 					</datasetRun>
-					<jr:listContents height="11" width="344">
+					<jr:listContents height="11" width="360">
 						<textField textAdjust="ScaleFont">
 							<reportElement x="140" y="0" width="220" height="10" uuid="0bd725af-697f-4c85-b4fc-432bbcfb51c3"/>
 							<box>
@@ -724,10 +724,6 @@
 					</jr:listContents>
 				</jr:list>
 			</componentElement>
-			<staticText>
-				<reportElement x="360" y="2" width="100" height="30" uuid="db528d40-2714-438b-b7ba-ef6d6ac8f1fb"/>
-				<text><![CDATA[prueba]]></text>
-			</staticText>
 		</band>
 		<band height="50">
 			<staticText>
