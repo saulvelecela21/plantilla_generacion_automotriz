@@ -704,7 +704,7 @@
 							<textElement>
 								<font size="7"/>
 							</textElement>
-							<text><![CDATA[Static Text]]></text>
+							<text><![CDATA[texto pruea]]></text>
 						</staticText>
 					</jr:listContents>
 				</jr:list>
