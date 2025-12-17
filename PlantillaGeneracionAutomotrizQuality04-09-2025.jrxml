@@ -729,11 +729,11 @@
 				</jr:list>
 			</componentElement>
 			<staticText>
-				<reportElement x="330" y="14" width="46" height="10" uuid="47759781-309d-44f6-91b2-441e69f02213">
+				<reportElement x="330" y="14" width="46" height="17" uuid="47759781-309d-44f6-91b2-441e69f02213">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font size="5"/>
+					<font size="7"/>
 				</textElement>
 				<text><![CDATA[texto a lado]]></text>
 			</staticText>
